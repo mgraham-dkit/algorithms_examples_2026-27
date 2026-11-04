@@ -8,9 +8,11 @@ import java.util.Random;
 public class TestStringSorting {
     private static final Random randomGenerator = new Random();
     static void main(String[] args) {
-        int size = 101;
+        int size = 10;
         String [] data = generateRandomStringArray(size);
         String [] benchmarkData = Arrays.copyOf(data, data.length);
+
+        System.out.println("Original data: " + Arrays.toString(data));
 
         // Sort original data with bubble sort implementation using lambda comparator
         ArrayUtils.bubblesort(data,
