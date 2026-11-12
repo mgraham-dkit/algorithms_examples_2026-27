@@ -5,8 +5,18 @@ public class RecursiveUtils {
         if(num <= 1){
             return 1;
         }
+        System.out.println("Now calculating factorial of " + num);
         int factorial =  factorial(num-1);
         return num * factorial;
+    }
+
+    public static int bruteFactorial(int value){
+        int total = 1;
+        for (int i = 1; i <= value ; i++) {
+            total = total * i;
+        }
+
+        return total;
     }
 
     public static int sum(int [] data){
