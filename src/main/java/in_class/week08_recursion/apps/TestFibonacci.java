@@ -13,5 +13,13 @@ public class TestFibonacci {
         int index = input.nextInt();
         int fib = RecursiveUtilities.fibonacci(index);
         System.out.println("Fibonacci of " + index + " = " + fib);
+
+        index = input.nextInt();
+        fib = RecursiveUtilities.fibonacci(index);
+        System.out.println("Fibonacci of " + index + " = " + fib);
+
+        index = input.nextInt();
+        fib = RecursiveUtilities.fibonacci(index);
+        System.out.println("Fibonacci of " + index + " = " + fib);
     }
 }
